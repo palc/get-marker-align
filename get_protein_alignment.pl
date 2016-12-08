@@ -1,8 +1,8 @@
 #!/usr/bin/perl -w
 use strict;
-use Cwd;
-my $currdir = getcwd;
-my $PFAMDB = "$currdir/data/Pfam-A.hmm";
+use FindBin qw($Bin);
+
+my $PFAMDB = "$Bin/data/Pfam-A.hmm";
 my $CPU = 4;
 
 my $EVALUE_CUTOFF = 1e-10;
